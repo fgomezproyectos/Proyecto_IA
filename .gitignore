@@ -1,0 +1,11 @@
+# Ignorar entorno virtual
+.venv/
+venv/
+
+# Ignorar cachés de modelos y descargas pesadas
+.cache/
+__pycache__/
+
+# Ignorar archivos del editor
+.vscode/
+.DS_Store
