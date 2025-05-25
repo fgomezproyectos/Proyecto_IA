@@ -4,10 +4,9 @@ from transformers import pipeline
 
 app = FastAPI()
 
-# Cargar el modelo en español
-generador = pipeline("text-generation", model="distilgpt2")
+# Usa modelo pequeño en español
+generador = pipeline("text-generation", model="datificate/gpt2-small-spanish")
 
-# Definir esquema de entrada
 class PromptInput(BaseModel):
     prompt: str
 
